@@ -1,173 +1,187 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-  <title> My Personal Website </title> 
-
-  <meta charset="UTF-8">
-  <meta name="author:" content="Jose Ampig and Jomicah Nunez">
-  <meta name="keywords" content="Lab excercise 2">
-  <meta name="date submitted" content="9/09/2024">
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Website</title>
+<meta charset="UTF-8">
+<meta name="author:" content="Jose Ampig and Jomicah Nunez">
+<meta name="keywords" content="Lab excercise 2">
+<meta name="date submitted" content="9/09/2024">
 <style>
-  body {
-    margin: 0px;
-    background: #F2F2F2; /* Light Gray Background */
-    font-family: 'Open Sans', sans-serif; /* Open Sans for body text */
-  }  
+body {
+    margin: 0;
+    background: #262842;
+    font-family: 'Open Sans', sans-serif;
+    color: #eee;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
-  
   .logo {
-    position: absolute;
+    position: right;
+	float: right;
     width: 150px;
     height: 150px;
-  } 
-  
-          
-  a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif; 
-  }
-  
-  .nav-h3 ul {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-h3 li {
-    width: 150px;	
-    float: left;
-  }
-  
-  .nav-h3 a {
-    display: block;
-    background: #262842;
-    padding: 15px 20px;
-    text-align: center;
-  }
-  
-  .nav-h3 a:hover {
+}
+.title {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
     color: #8897BD;
-    background: #2c497f;
-  }
-  
-  .nav-h3 a:active {
-    color: #000000;
-    background: #F2F2F2;
-  }
-  
-  a.nav-active5 {
+    margin: 20px 0 10px 20px;
+    padding: 5px;
+}
+
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
     color: white;
-    background: #262842;
-  }
-  
-  .Text {
-    text-align: center;
-    color: #333333; 
-  }
+    text-decoration: none;
+    font-size: 1em;
+}
 
-  h1, h2 { 
-    font-family: 'Playfair Display', serif; 
-    font-weight: 700; 
-  }
+.nav-item:hover {
+    color: #8897BD;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: white;
+    padding: 2px 5px;  
+}
 
-  .definition { 
-    border: 1px solid #999; 
-    padding: 10px; 
-    margin: 20px auto; 
-    max-width: 800px; 
-  }
-  
-  
-  .text2 {
+.search-bar input[type="text"] {
+    border: none;
+    background-color: transparent;
+    padding: 2px; 
+    font-size: 14px; 
+    width: 150px;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+
+}
+.problem {
     text-align: center;
-    color: #333333; 
-	}
-  
-  
-  .causes { 
-	position: absolute;
-    border: 1px solid #999; 
-    padding: 10px; 
-    margin: 50px auto; 
-	margin-left: 100px;
-    max-width: 600px; 
-	}
-	
-	.text3 {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.problem h2{
+    margin-bottom: 5px;
+}
+
+.definition{
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.text2{
     text-align: center;
-    color: #333333; 
-	}
-  
-  
-  .causes2 { 
-	position: absolute;
-    border: 1px solid #999; 
-    padding: 10px; 
-    margin: 50px auto; 
-	margin-left: 100px;
-	margin-top: 300px;
-    max-width: 600px; 
-	}
+    color: #8897BD;
+}
+
+.causes{
+    position: relative;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.text3{
+    text-align: center;
+    color: #8897BD;
+}
+
+.causes2{
+    position: relative;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.homeless img{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 </head>
-<body>	
-  <div class="container">
-    <header>
-      <div>
-        <img class="logo" src="logo.png" alt="logo">
-      </div>
-    </header>
-  </div>
-  <nav class="nav-h3">
-    <ul>
-      <li><a class="nav-active5" href="#">Home</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="about.html">About</a></li> 
-      <li><a href="#">Information</a></li>
-    </ul>
-  </nav>
-   
-  <div class="Text" id="homeless">
-    <h2>The problem</h2>
-    <p><i>Homelessness</i></p>
-    <p class="definition" style="margin-left: 375px; margin-right: 375px"" > "Homelessness" is defined as a condition wherein an individual or family lacks a fixed night-time residence;
-    an individual or family lives in a public or private facility that is not designed for, or ordinarily used as, a regular sleeping accommodation for human beings; an individual or family lives in a shelter that is designed and operated to provide temporary living accommodations;
-    or an individual or family has a place of residence at the end of the night, but lacks a fixed nighttime or permanent residence and is actually and intermittently residing at the place, lacking only the resources and support that would allow the individual or family to obtain a permanent residence.</p>
-  </div>
-  
-   <div class="text2">
-   
-<p class="causes"  > 
-		<strong> The Costs and Harms of Homelessness </strong>
-		<br>
-			Homelessness reflects and exacerbates significant harms to individuals, communities, and society. These impacts are considerable and often difficult to measure, including social, medical, behavioral, economic, and ethical costs. While discussing these costs may seem like "homelessness economics," understanding the damage caused and the benefits of effective solutions can create urgency for addressing the issue.
-		<br>
-		<br>
-			We emphasize the inherent value of ending homelessness, arguing that the moral responsibility to tackle it goes beyond any cost-benefit analysis. Recognizing what is at stake can drive action, and our goal is to provide insights that strengthen the case for solving homelessness.
-		<br>
-		<br>
-</p>
-	</div>
-
-	<div class="text3">
-	<p class="causes2">
-	<strong> Costs to Individuals and Families</strong>
-	<br>
-	Homelessness can negatively impact nearly every part of a person’s life, affecting their sense of security, social connections, health, and even life expectancy. For children and families, the consequences can be severe, leading to developmental delays, interruptions in schooling, and even family separation. The following sections outline various harms that homelessness causes for both individuals and families across different areas.
-	</p>
-	</div>
-	<
-<div class="homeless">
-	<div>
-		<img style="height: 500px; width: 700px; float: right; margin-right: 40px;" src="poor1.jpg" alt="trashy environment">
-	</div>
+<body>
+<div> <img class="logo" src="logo.png" alt="logo"> </div>
+<div class="title">Homelessness</div>
+<div class="header-container">
+    <div class="navbar">
+        <div class="nav-items">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="article.html" class="nav-item">Articles</a>
+            <a href="about.html" class="nav-item">About</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <span class="search-icon">&#128269;</span>
+        </div>
+    </div>
 </div>
-   </p>
-   
+
+<div class="problem">
+    <h2>The Problem</h2>
+    <p class="definition"> "Homelessness" is defined as a condition wherein an individual or family lacks a fixed night-time residence;
+        an individual or family lives in a public or private facility that is not designed for, or ordinarily used as, a regular sleeping accommodation for human beings; an individual or family lives in a shelter that is designed and operated to provide temporary living accommodations;
+        or an individual or family has a place of residence at the end of the night, but lacks a fixed nighttime or permanent residence and is actually and intermittently residing at the place, lacking only the resources and support that would allow the individual or family to obtain a permanent residence.</p>
+</div>
+
+<div class="text2">
+    <p class="causes">
+        <strong>The Costs and Harms of Homelessness</strong>
+        <br>
+        Homelessness reflects and exacerbates significant harms to individuals, communities, and society. 
+		These impacts are considerable and often difficult to measure, including social, medical, behavioral, economic, and ethical costs.
+		While discussing these costs may seem like "homelessness economics," understanding the damage caused and the benefits of effective solutions can create urgency for addressing the issue.
+        <br>
+        <br>
+        We emphasize the inherent value of ending homelessness, arguing that the moral responsibility to tackle it goes beyond any cost-benefit analysis. 
+		Recognizing what is at stake can drive action, and our goal is to provide insights that strengthen the case for solving homelessness.
+        <br>
+        <br>
+    </p>
+</div>
+
+<div class="text3">
+    <p class="causes2">
+        <strong>Costs to Individuals and Families</strong>
+        <br>
+        Homelessness can negatively impact nearly every part of a person’s life, affecting their sense of security, social connections, health, and even life expectancy. 
+		For children and families, the consequences can be severe, leading to developmental delays, interruptions in schooling, and even family separation.
+		The following sections outline various harms that homelessness causes for both individuals and families across different areas.
+    </p>
+</div>
+
+<div class="homeless">
+    <img src="poor1.jpg" alt="trashy environment">
+</div>
 </body>
 </html>
